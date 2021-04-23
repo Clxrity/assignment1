@@ -14,8 +14,8 @@ package com.meritamerica.assignment1;
 		this.firstName = "";
 		this.middleName  = "";
 		this.lastName  = "";
-		this.checkingAccountOpeningBalance = 0;
-		this.savingsAccountOpeningBalance = 0;
+		this.checkingAccountOpeningBalance = 0.0;
+		this.savingsAccountOpeningBalance = 0.0;
 		toString();
 	}	
 	
