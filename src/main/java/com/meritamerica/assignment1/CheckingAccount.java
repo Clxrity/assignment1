@@ -2,7 +2,6 @@ package com.meritamerica.assignment1;
 
 public class CheckingAccount {
 	
-	private static double interestRate;
 	private double balance;
 	
 	//Opening/Starting balance 0.0
@@ -11,12 +10,12 @@ public class CheckingAccount {
 	}
 	
 	//Deposit in checkings
-	public void deposit(double amount) {
+	public Boolean deposit(double amount) {
 		balance += amount;
 	}
 	
 	//Withdraw from checkings
-	public void withdraw(double amount) {
+	public withdraw(double amount) {
 		balance -= amount;
 	}
 	
@@ -25,11 +24,7 @@ public class CheckingAccount {
 		return balance;
 	}
 	
-	//Getter and Setter for interest rate 
-	public static double getInterestRate() {
-		return interestRate;
-	}
-	public static void setInterestRate(double interestRate) {
-		CheckingAccount.interestRate = interestRate;
+	pubic double getInterestRate(double i) {
+		return i;
 	}
 }
