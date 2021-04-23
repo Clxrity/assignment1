@@ -1,7 +1,7 @@
 package com.meritamerica.assignment1;
 
 public class CheckingAccount {
-	// Test comment
+	
 	private static double interestRate;
 	private double balance;
 	
