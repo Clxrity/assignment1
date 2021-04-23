@@ -5,10 +5,8 @@ public class CheckingAccount {
 	private static double interestRate;
 	private double balance;
 	
-	CheckingAccount checking = new CheckingAccount();
-	
 	//Opening/Starting balance 0.0
-	public CheckingAccount() {
+	public CheckingAccount(double openingBalance) {
 		balance = 0.0;
 	}
 	
