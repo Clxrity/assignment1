@@ -11,12 +11,12 @@ public class CheckingAccount {
 	}
 	
 	//Deposit in checkings
-	public void depositChecking(double amount) {
+	public void deposit(double amount) {
 		balance += amount;
 	}
 	
 	//Withdraw from checkings
-	public void withdrawChecking(double amount) {
+	public void withdraw(double amount) {
 		balance -= amount;
 	}
 	
