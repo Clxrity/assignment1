@@ -20,8 +20,8 @@ public class SavingsAccount {
 	//Deposit in savings
 	public boolean deposit(double amount) {
 		balance += amount;
-		if (balance > 0) {
-			System.out.println("Balance after deposit: " + (getBalance() - amount));
+		if (amount > 0) {
+			System.out.println("Balance after deposit: " + (getBalance() + amount));
 			return true;
 			
 		} else {
