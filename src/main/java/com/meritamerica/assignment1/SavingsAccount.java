@@ -1,7 +1,8 @@
 package com.meritamerica.assignment1;
 
 public class SavingsAccount {
-	private static double interestRate;
+	
+	private double futureVal;
 	private double balance;
 	
 	SavingsAccount savings = new SavingsAccount();
@@ -11,26 +12,48 @@ public class SavingsAccount {
 		balance = 0.0;
 	}
 	
+	//Get Checking Balance
+			public double getBalance() {
+				return balance;
+	}
+			
 	//Deposit in savings
-	public void depositSavings(double amount) {
+	public boolean deposit(double amount) {
 		balance += amount;
+		if (balance > 0) {
+			System.out.println("Balance after deposit: " + (getBalance() - amount));
+			return true;
+			
+		} else {
+			System.out.println("Unable proccess deposit.");
+			return false;
+		} 
 	}
 	
 	//Withdraw from savings
-	public void withdrawSavings(double amount) {
+	public boolean withdraw (double amount) {
 		balance -= amount;
+		if(balance < amount) {
+            System.out.println("Transaction denied due to insufficient funds.");
+            return false;
+            
+        } else {
+        	
+            System.out.println("Balance amount after withdraw: " + (getBalance() - amount));
+            return true;
+        }
 	}
 	
-	//Get savings Balance
-	public double getBalance() {
-		return balance;
+	public double getInterestRate(double i) {
+		return i;
 	}
 	
-	//Getter and Setter for interest rate 
-	public static double getInterestRate() {
-		return interestRate;
+	public double futureValue(int years) {
+		futureVal = Math.pow(1+1.00, years);
+		return futureVal;
 	}
-	public static void setInterestRate(double interestRate) {
-		SavingsAccount.interestRate = interestRate;
+	
+	public String toString() {
+		return 
 	}
 }
