@@ -23,7 +23,7 @@ public class CheckingAccount {
 			return true;
 			
 		} else {
-			System.out.println("Unable proccess deposit.");
+			System.out.println("Unable to proccess deposit.");
 			return false;
 		} 
 	}
